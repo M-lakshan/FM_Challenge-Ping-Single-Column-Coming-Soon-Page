@@ -1,0 +1,150 @@
+header {
+    display: block;
+    min-height: 65px;
+    width: 100%;
+
+    @media screen and (min-width: 1080px) {
+        min-height: 32px;
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 86px;
+
+    .socials {
+        display: block;
+
+        .fab {
+            color: $Blue;
+            border: 1px solid $Pale_Blue;
+            border-radius: 50%;
+            transition: 250ms ease;
+            margin: 5px;
+
+            &:hover {
+                cursor: pointer;
+                transition: 250ms ease;
+                border: 1px solid $Blue;
+                background: $Blue;
+                color: white;
+            }
+        }
+
+        .fa-facebook-f {
+            padding: 10px 13px;
+        }
+
+        .fa-twitter {
+            padding: 10px 9px 10px 11px;
+        }
+     
+        .fa-instagram {
+            padding: 9px 9px 8px 9px;
+            margin-left: 8px;
+            transform: scale(1.1);
+        }
+    }
+
+    .copywrite {
+        display: flex;
+        align-items: center;
+        height: 45px;
+        color: $Gray;
+        font-size: 12px;
+        margin-bottom: 0%;
+        font-family: 'Libre Franklin', sans-serif;
+    }
+
+    .attribution {
+        text-align: center;
+        padding-top: 24px;
+        opacity: 0%;
+        transition: 250ms ease;
+
+        &:hover {
+            cursor: pointer;
+            transition: 250ms ease;
+            font-size: 12px;
+            padding-top: 0px;
+            height: 24px;
+            opacity: 100%;
+        }
+    }
+
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
+
+    @media screen and (min-width: 1080px) {
+            
+        .socials {
+
+            .fab {
+                color: $Blue;
+                border: 1px solid $Pale_Blue;
+                border-radius: 50%;
+                transition: 250ms ease;
+                font-size: 10px;
+
+                &:hover {
+                    cursor: pointer;
+                    transition: 250ms ease;
+                    border: 1px solid $Blue;
+                    background: $Blue;
+                    color: white;
+                }
+            }
+
+            .fa-facebook-f {
+                padding: 5px 7px;
+                margin-right: 0px;
+            }
+
+            .fa-twitter {
+                padding: 5px 4px 5px 6px;
+                margin-right: 2px;
+                margin-left: 5px;
+            }
+        
+            .fa-instagram {
+                padding: 4px 4px 3px 4px;
+                margin-left: 5px;
+            }
+        }
+
+        .copywrite {
+            display: flex;
+            align-items: center;
+            height: 25px;
+            color: $Gray;
+            font-size: 10px;
+            margin-top: 2px;
+            margin-bottom: 0%;
+            font-family: 'Libre Franklin', sans-serif;
+        }
+
+        .attribution {
+            text-align: center;
+            padding-top: 24px;
+            height: 24px;
+            opacity: 0%;
+            transition: 250ms ease;
+
+            &:hover {
+                cursor: pointer;
+                transition: 250ms ease;
+                font-size: 12px;
+                padding-top: 28px;
+                opacity: 100%;
+            }
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    }
+}
